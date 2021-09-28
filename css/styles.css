@@ -1,0 +1,43 @@
+:root {
+    --base: 1440px;
+    --lg: 1260px;
+    --md: 1024px;
+    --xs: 375px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    min-width: 290px;
+    width: 100%;
+    max-width: var(--base);
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header, .footer {
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    min-height: 60px;
+}
