@@ -1,29 +1,17 @@
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'CoFoSans';
     font-weight: 400;
-    src: url(../fonts/montserrat/Montserrat-Regular.woff) format("woff");
+    src: url(../fonts/cofosans/CoFoSans-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'CoFoSans';
     font-weight: 500;
-    src: url(../fonts/montserrat/Montserrat-Medium.woff) format("woff");
+    src: url(../fonts/cofosans/CoFoSans-Medium.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    src: url(../fonts/montserrat/Montserrat-SemiBold.woff) format("woff");
-}
-
-@font-face {
-    font-family: 'Montserrat';
+    font-family: 'CoFoSans';
     font-weight: 700;
-    src: url(../fonts/montserrat/Montserrat-Bold.woff) format("woff");
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-weight: 900;
-    src: url(../fonts/montserrat/Montserrat-ExtraBold.woff) format("woff");
+    src: url(../fonts/cofosans/CoFoSans-Bold.ttf) format("truetype");
 }
