@@ -91,8 +91,14 @@
                 </div>
             </div>
             <div class="card cols-group__item">
-                <div class="card__img">
-                    <div class="image" style="background-image: url('images/development/img1.png')"></div>
+                <div class="card__img card__video">
+                    <button class="card__video-btn">
+                        <img src="images/video-play-btn.svg" alt="Video play btn">
+                    </button>
+                    <video height="165" id="video">
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h3 class="card__title">Жилой дом</h3>
                 <div class="card__des">
@@ -256,21 +262,77 @@
             <span>Партнеры</span>
         </h1>
         <div class="partners">
-            <img src="images/logos/logo-c2-group.svg" alt="v">
-            <img src="images/logos/logo-stroym.svg" alt="stroym">
-            <img src="images/logos/logo-sinerga-sm.svg" alt="sinerga">
-            <img src="images/logos/logo-otel-bp.svg" alt="otel-bp">
-            <img src="images/logos/logo-timecons.svg" alt="timecons">
-            <img class="partners__sm" src="images/logos/logo-plast-ind.svg" alt="plast-ind">
-            <img src="images/logos/logo-tiger-group.svg" alt="tiger-group">
-            <img src="images/logos/logo-avanta.svg" alt="avanta">
-            <img src="images/logos/logo-naslediye.svg" alt="naslediye">
-            <img src="images/logos/logo-yolka-dev.svg" alt="yolka-dev">
+            <div class="partners__item">
+                <img src="images/logos/logo-c2-group.svg" alt="c2-group">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-stroym.svg" alt="stroym">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-sinerga-sm.svg" alt="sinerga">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-otel-bp.svg" alt="otel-bp">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-timecons.svg" alt="timecons">
+            </div>
+            <div class="partners__item">
+                <img class="partners__sm" src="images/logos/logo-plast-ind.svg" alt="plast-ind">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-tiger-group.svg" alt="tiger-group">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-avanta.svg" alt="avanta">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-naslediye.svg" alt="naslediye">
+            </div>
+            <div class="partners__item">
+                <img src="images/logos/logo-yolka-dev.svg" alt="yolka-dev">
+            </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="container"></div>
+        <div class="footer__items container">
+            <div class="footer__item">
+                <img class="logo" src="images/logos/logo-sinerga-white.svg" alt="Sinerga logo">
+            </div>
+            <div class="footer__item">
+                <ul>
+                    <li>Россия, г.Новосибирск</li>
+                    <li>ул. Фрунзе 80 офис 904</li>
+                    <li><a href="tel:+7 (383) 280-80-85">тел.: +7 (383) 280-80-85</a></li>
+                    <li><a href="#">e-mail: post@sinerga.ru</a></li>
+                </ul>
+
+            </div>
+            <div class="footer__item footer__item_lg">
+                <p>Представленная информация на сайте носит информационный характер и не является публичной офертой. Компания не является публичной, не оказывает брокерские и дилерские услуги, не является кредитной организацией.</p>
+
+                <div class="footer__copyright">
+                    © 2004–2016, Инвестиционная компания «Синерга»
+                </div>
+            </div>
+
+        </div>
     </footer>
 </div>
+
+<script>
+    var videoBtn = document.querySelector('.card__video-btn');
+
+    if (videoBtn) {
+        videoBtn.addEventListener('click', function (e) {
+            var videoBlock = document.getElementById('video');
+            videoBlock.play();
+            videoBlock.setAttribute('controls', 'true');
+            this.remove();
+        })
+    }
+
+</script>
+
 </body>
 </html>
