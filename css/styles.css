@@ -88,11 +88,35 @@ body {
     margin: 10px;
 }
 
+/* info block */
+.info-block {
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+}
+
+.info-block__item {
+    float: left;
+}
+
+.info-block__item_with-img {
+    padding: 7px;
+}
+
+.info-block__img {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, .18);
+}
+
+.info-block__item .image {
+    height: 200px;
+}
+
 /* card */
 .cards-wrapper {
     overflow: hidden;
 }
-
 
 .card {
     float: left;
@@ -110,7 +134,7 @@ body {
     margin-bottom: 20px;
     height: 165px;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -204,6 +228,10 @@ body {
 
     .container {
         max-width: 100%;
+    }
+
+    .info-block__item {
+        margin-bottom: 20px;
     }
 
     .cols-group--col-4 .cols-group__item:nth-child(3n) {
