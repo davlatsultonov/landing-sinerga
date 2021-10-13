@@ -60,6 +60,12 @@ body {
     overflow: hidden;
 }
 
+.heading_sm {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+
 .heading--with-line span{
     position: relative;
 }
@@ -95,8 +101,20 @@ body {
     overflow: hidden;
 }
 
+.info-block--indent-top {
+    margin-top: 20px;
+}
+
 .info-block__item {
     float: left;
+}
+
+.info-block__item p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.info-block__item .heading {
+    margin-top: 0;
 }
 
 .info-block__item_with-img {
