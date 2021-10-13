@@ -140,6 +140,30 @@ body {
     height: 200px;
 }
 
+/* breadcrumbs */
+.breadcrumbs {
+    margin-block: 11px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.breadcrumbs__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}
+
+
 /* card */
 .cards-wrapper {
     overflow: hidden;
