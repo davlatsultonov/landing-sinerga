@@ -77,6 +77,17 @@ body {
     bottom: 8px;
 }
 
+/* partners */
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partners img {
+    margin: 10px;
+}
+
 /* card */
 .cards-wrapper {
     overflow: hidden;
@@ -220,6 +231,10 @@ body {
         --cards-3-count: 1;
     }
 
+    .card:last-child {
+        margin-bottom: 0;
+    }
+
     .card__title, .card__des {
         font-size: 16px;
         line-height: 18px;
@@ -229,5 +244,20 @@ body {
         font-size: 28px;
         line-height: 36px;
         margin-bottom: 15px;
+    }
+
+    .partners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners img {
+        margin: 20px;
+        margin-inline: 0;
+    }
+
+    .partners__sm {
+        max-width: 280px;
+        width: 100%;
     }
 }
