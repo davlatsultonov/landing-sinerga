@@ -57,21 +57,24 @@ body {
     line-height: 37px;
     margin: 30px 0 25px;
     font-weight: 500;
+    overflow: hidden;
 }
 
-.heading--with-line {
-    display: flex;
+.heading--with-line span{
+    position: relative;
 }
 
-.heading--with-line::after {
+.heading--with-line span::after {
     content: '';
     display: block;
     height: 2px;
     background-color: #000;
-    flex-grow: 1;
-    align-self: flex-end;
-    margin-bottom: 10px;
+    position: absolute;
+    right: 0;
+    width: 1000%;
+    left: 100%;
     margin-left: 10px;
+    bottom: 8px;
 }
 
 /* card */
@@ -220,5 +223,11 @@ body {
     .card__title, .card__des {
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 15px;
     }
 }
